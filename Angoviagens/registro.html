@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AngoViagens suas Viagens lariante">
+	  <meta name="keywords" content="ango,angoviagens,bustick">
+  	<meta name="author" content="Viagens segura">
+    <title> Registros </title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/@media.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+  </head>
+  <body onresize="mudouTamanho()">
+    
+    <div id="interface">
+      
+          <header>
+            <div class="container">
+              <div id="branding">
+                <a href="index.html">Ango<span class="highlight">Viagens</span></a>
+              </div>
+              <div class="telefone-menu" onclick="clicaMenu()">
+                <span class="sr-only"></span>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+              </div>
+              <nav id="itens">
+                <ul class="nav-lista">
+                    <li><a href="blog.html">Início</a></li>
+                    <li><a href="reservar1.html">Reservar</a></li>
+                    <li class="current1"><a href="registro.html">Registros</a></li>
+                    <li><a href="">Informações</a></li>
+                    <li><a href="sobre1.html">Sobre</a></li>
+                    <li class="borda"><a href="contacto.html"><span class="glyphicon glyphicon-phone-alt"></span>Apoio/Cliente</a></li> 
+                  </ul>
+                </ul>
+              </nav>
+        </div>
+            </header>
+      
+
+            <section id="newsletter">
+        <div class="container">
+          <h3>Viagens e Reservas</h3>
+          <h4>Site de compras de Bibletes Online </h4>
+          <h5>Blog AngoViagens</h5>
+          <li class="dropdown">
+            <span class="glyphicon glyphicon-user user"></span>
+            <ul class="dropdown-menu">
+              <li><a href="perfil.html"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
+              <li><a href="configuracoes.html"><span class="glyphicon glyphicon-cog"></span> Configurações</a></li>
+              <li class="borda"><a onclick="openModal()"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
+            </ul>
+          </li>
+        </div>
+     
+            </section>
+            <br>
+            <section id="main">
+        <div class="container">
+          <article id="main-col">
+            <h1 class="page-titlee">Reportagem dos registros</h1>
+            <div class="container">
+             
+                <form id="formbusca" action="">
+                     <div class="row">
+                        <div class="col-md-3">
+                        <div class="input-group">
+                        <input type="text" class="form-control col-md-3" name="pesquisar" id="pesquisar" placeholder="Procurar nome ou ID">
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        
+                        </div>
+                        </div>
+                       </div>
+                </form>
+                <br>
+                
+                <div class="row">
+                  
+                    <div class="alert alert-info alerta" role="alert"><span class="glyphicon glyphicon-alert"></span>  Por favor posicione o seu telefone na posição <strong>horizontal</strong> para visualizar melhor a <strong>Listagem de registros</strong></div>
+                </div>
+             
+                
+                <div class="panel painel" style="height: auto;" id="pagina1">
+                    <!-- Default panel contents -->
+                    
+                    <div class="panel-heading painel">Listagem de registros</div>
+                    <!-- Table -->
+                    <button class="glyphicon glyphicon-refresh btn" style="display: flex; background-color: transparent;"><a href="registro.html" style="text-decoration: none;">Actualizar</a></button>
+                        <table class="table table-responsive table-striped table-bordered table-hover table-condensed tabela-personalizado">
+                          
+                            <thead class="thead-personalizado">
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Passageiro</th>
+                                     <th>Autocarro</th>
+                                      <th>Localização</th>
+                                      <th>Destinação</th>
+                                      <th>Hora Partida</th>
+                                      <th>Referência</th>
+                                      
+                                </tr>
+                            </thead>
+                            <tbody class="tbody-personalizado ">
+                                <tr>
+                                    <td>1</td>
+                                    <td>José Mbenga</td>
+                                   <td>Tcul</td>
+                                  <td>Luanda</td>
+                                  <td>Caxito</td>
+                                  <td>18:00:00</td>
+                                  <td>1111</td>
+                    
+                               
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alváro da Silva</td>
+                                    <td>Huambo Expresso</td>
+                                    <td>Luanda</td>
+                                    <td>Caxito</td>
+                                    <td>18:00:00</td>
+                                    <td>1112</td>
+                      
+                               
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Hélder Chicala</td>
+                                     <td>Macon</td>
+                                    <td>Luanda</td>
+                                    <td>Benguela</td>
+                                    <td>18:00:00</td>
+                                     <td>1113</td>
+                               
+                                </tr>
+                          
+                    
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Denis Bento</td>
+                                      <td>Macon</td>
+                                    <td>Cunene</td>
+                                    <td>Malanje</td>
+                                    <td>18:00:00</td>
+                                      <td>1114</td>
+                                 </tr>
+                    
+                    
+                            </tbody>
+                           
+                        </table>
+                        <div class="panel-footer">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div class="conatiner">
+                          <nav aria-label="...">
+                          <ul class="pager">
+                                              <li onclick="alterPag()"><a href="#pagina2">Ver mais...</a></li>
+                          </ul>
+                         </nav></div>
+            </div>
+         
+        </div>
+<div class="container">
+  
+          <div class="panel painel" style="height: auto; display: none;" id="pagina2">
+            <!-- Default panel contents -->
+            <div class="panel-heading painel">Listagem de registros</div>
+            <!-- Table -->
+            <button class="glyphicon glyphicon-refresh btn" style="display: flex; background-color: transparent;"><a href="registro.html" style="text-decoration: none;">Actualizar</a></button>
+                <table class="table table-responsive table-striped table-bordered table-hover table-condensed tabela-personalizado">
+                    <thead class="thead-personalizado">
+                        <tr>
+                            <th>Id</th>
+                            <th>Hora Chegada</th>
+                             <th>Sexo</th>
+                              <th>Conta</th>
+                              <th>Data da Viagem</th>
+                              <th>Hora Partida</th>
+                              <th>Referência</th>
+  
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-personalizado ">
+                        <tr>
+                            <td>1</td>
+                            <td>12-21-22</td>
+                           <td>M</td>
+                          <td>baudbiausd</td>
+                          <td>Caxito</td>
+                          <td>18:00:00</td>
+                          <td>1111</td>
+  
+  
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>12-21-22</td>
+                            <td>M</td>
+                           <td>baudbiausd</td>
+                            <td>Caxito</td>
+                            <td>18:00:00</td>
+                            <td>1112</td>
+  
+  
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>12-21-22</td>
+                            <td>M</td>
+                           <td>baudbiausd</td>
+                            <td>Benguela</td>
+                            <td>18:00:00</td>
+                             <td>1113</td>
+  
+                        </tr>
+  
+  
+                            <tr>
+                                <td>4</td>
+                                <td>12-21-22</td>
+                                <td>M</td>
+                               <td>baudbiausd</td>
+                            <td>Malanje</td>
+                            <td>18:00:00</td>
+                              <td>1114</td>
+                         </tr>
+  
+  
+                    </tbody>
+  
+                </table>
+                <div class="panel-footer">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+  
+                <div class="conatiner">
+                  <nav aria-label="...">
+                  <ul class="pager">
+                  <li onclick="alterPag2()"><a href="#pagina1">Ver menos...</a></li>
+                 </ul>
+                 </nav></div>
+    </div>
+  
+  </div>
+</div>
+
+<script>
+
+
+</script>
+
+        
+            </section>
+             
+            <footer>
+        <p><a href="sobre.html">Quem somos?</a></p>
+        <div>
+         <p> Todas as imagens pertencem a seus respectivos proprietários <br> | <a href="">Privacidade</a> | <a href=""> Cookies </a> | <a href="">Termos de uso </a>| </p>
+        </div>
+        <p> &copy; Copyright 2023 <br> ASSOCIAÇÃO DOS PROGRAMADORES IPIAL</p>
+            </footer>
+
+      </div>
+      
+            <!-- Janela de Modal -->
+            <article>
+              <div class="container">
+                <div  class="col-md-12">
+          <!------janela---->
+          <form class="modal" id="myModal">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+           <!----cabecalho--->
+            <span class="closemymodal">&times;</span>  
+           <!----corpo--->
+           <div class="modal-body">
+            <fieldset class="fieldset">
+            <div class="from-group">
+          <p class="paragrafo">Tem certeza que deseja sair?</p>  
+          </fieldset>
+          </div>
+          <!----rodape--->
+          <div class="modal-footer">
+            <button type="button"class="btn btn-primary cancel-btn" data-dismiss="modal">
+                 Cancelar
+          </button>
+             <button type="submit"class="btn btn-danger confirm-btn">
+                confirmar
+          </button>
+          </div>
+          </div>
+          </div>
+          </div>
+          </form>
+          </div>
+          </div>
+            </article>
+    
+
+  </body>
+  <script>
+    
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";  
+  }
+  
+  document.querySelector(".closemymodal").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+  
+  document.querySelector(".cancel-btn").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+
+    </script>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AngoViagens suas Viagens lariante">
+	  <meta name="keywords" content="ango,angoviagens,bustick">
+  	<meta name="author" content="Viagens segura">
+    <title> Reservar </title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/@media.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+  </head>
+  <body onresize="mudouTamanho()">
+    
+    <div id="interface">
+      
+          <header>
+            <div class="container">
+              <div id="branding">
+                <a href="index.html">Ango<span class="highlight">Viagens</span></a>
+              </div>
+              <div class="telefone-menu" onclick="clicaMenu()">
+                <span class="sr-only"></span>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+              </div>
+              <nav id="itens">
+                <ul class="nav-lista">
+             
+                        <li><a href="blog.html">Início</a></li>
+                        <li class="current1"><a href="reservar1.html">Reservar</a></li>
+                        <li><a href="registro.html">Registros</a></li>
+                        <li><a href="">Informações</a></li>
+                        <li><a href="sobre1.html">Sobre</a></li>
+                        <li class="borda"><a href="contacto.html"><span class="glyphicon glyphicon-phone-alt"></span>Apoio/Cliente</a></li> 
+                      </ul>
+              
+              </nav>
+        </div>
+            </header>
+        
+            <section id="newsletter">
+        <div class="container" >
+          <h3>Viagens e Reservas</h3>
+          <h4>Site de compras de Bibletes Online </h4>
+          <h5>Blog AngoViagens</h5>
+          <li class="dropdown">
+            <span class="glyphicon glyphicon-user user"></span>
+            <ul class="dropdown-menu">
+              <li><a href="perfil.html"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
+              <li><a href="configuracoes.html"><span class="glyphicon glyphicon-cog"></span> Configurações</a></li>
+              <li class="borda"><a onclick="openModal()"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
+            </ul>
+          </li>
+        </div>
+    
+            </section>
+            <br>
+            <section id="main" style="background:url('img/IMG-20230619-WA0025.jpg');
+            background-size: cover;
+            background-position: center;margin-bottom: -20px;">
+        <div class="container">
+          <article id="main-col">
+            <h1 class="page-title">Reservar</h1>
+         <div class="container">
+          <div>
+            <form class="form" action="">
+              <legend style=" color: #ffffff; text-align: left; width: 80%;"><strong>Detalhes de Autocarro</strong></legend>
+              <div  class="form-group col-md-3">
+                <P><label for="nomeAuto">Autocarro</label></P> 
+                <input type="text" class="form-control" name="nomeAuto" id="nomeAuto" required placeholder="Insira o nome do Autocarro" list="Autocarro"/>
+                <datalist id="Autocarro">
+                    <select name="Autocarro" id="Autocarro">
+                    <optgroup label="Selecione o nome Autocarro">
+                      <option value="Tcul"></option>
+                      <option value="Macon"></option>
+                      <option value="Ango Real"></option>
+                      <option value="Huambo Expresso"></option>
+                      <option value="Torine"></option>         
+                </optgroup> 
+              </select>
+              </datalist>
+              <P><label for="localAuto">Sua Localização</label></P>
+  
+              <input type="text" class="form-control" required name="localAuto" placeholder="Insira a tua localidade" id="localAuto" list="localidade">
+              <datalist id="localidade">
+                <select name="localidade" id="localidade">
+                <optgroup label="Selecione o nome Autocarro">
+             <option value="Luanda"></option>
+                 <option value="Benguela"></option>
+                 <option value="Namibe"></option>
+                 <option value="Huambo"></option>
+                 <option value="Zaire"></option>
+                 <option value="Bengo"></option>
+                 <option value="Moxico"></option>
+                 <option value="Lunda Sul"></option>
+                 <option value="Lunda Norte"></option>
+                 <option value="Cabinda"></option>
+                 <option value="Malanje"></option>
+                 <option value="Cuanza Sul"></option>
+                 <option value="Uige"></option>
+                 <option value="Cuanza Norte"></option>
+                 <option value="Bíe"></option>
+                 <option value="Kuando Kubango"></option>
+                 <option value="Huíla"></option>
+                 <option value="Cunene"></option>
+            </optgroup>
+            
+            </datalist>
+              </select>
+
+            </div>
+            
+
+  <div class="form-group col-md-3">
+    <P><label for="destinAuto">Destinação</label></P>
+    
+    <input type="text" class="form-control" required name="destinAuto" id="destinAuto" placeholder="Insira o seu destino" list="destino">
+  <datalist id="destino">
+    <select name="destino" id="destino">
+    <optgroup label="Selecione o destino">
+ <option value="Luanda"></option>
+     <option value="Benguela"></option>
+     <option value="Namibe"></option>
+     <option value="Huambo"></option>
+     <option value="Zaire"></option>
+     <option value="Bengo"></option>
+     <option value="Moxico"></option>
+     <option value="Lunda Sul"></option>
+     <option value="Lunda Norte"></option>
+     <option value="Cabinda"></option>
+     <option value="Malanje"></option>
+     <option value="Cuanza Sul"></option>
+     <option value="Uige"></option>
+     <option value="Cuanza Norte"></option>
+     <option value="Bíe"></option>
+     <option value="Kuando Kubango"></option>
+     <option value="Huíla"></option>
+     <option value="Cunene"></option>
+</optgroup>
+</select>
+</datalist>
+
+
+ 
+  <p> <label for="tipoAuto">Tipo de Autocarro</label>   </p>
+  <select style="padding: 7px; border-radius: 10%; width: 100%;" name="tipoAuto" required id="tipoAuto">
+ <optgroup label="Detalhes do Autocarro">
+<option value="Ar acondicionado">AC</option>
+<option value="Sem Ac">AC/NÃO</option>
+</optgroup>
+</select>
+  </div>
+  <div class="form-group col-md-2">
+    <p><label for="Hora_partida">Hora da Partida</label></p>
+<input style="padding: 7px; border-radius: 10%; width: 100%;" type="time" required name="Hora_partida" id="Hora_partida">
+
+<p> <label for="Hora_chegada">Hora da Chegada</label>
+  <input style="padding: 7px; border-radius: 10%; width: 100%;" type="text" name="Hora_chegada" id="Hora_chegada"  readonly>
+  </p>
+
+  
+    </div>
+
+      <div class="col-md-8">
+        <fieldset class="fieldset">
+          <legend style="color:#ffffff;" class="text-center texto"><strong>Pagamento</strong></legend>
+    <label for="card_number">Número do cartão:</label>
+    <input class="form-control"  type="text" id="card_number" name="card_number" placeholder="Insira o número do cartão"  required>
+  
+    <label for="security_code">Nome do cartão:</label>
+    <input class="form-control"  type="text" id="nome_cartao" name="nome_cartao" placeholder="Insira o nome do seu cartâo"  required>
+
+    <label for="expiry_date">Data de validade:</label>
+    <input class="form-control" type="date" id="expiry_date" name="expiry_date" placeholder="Insira a data de validade"  required>
+  
+    <label for="security_code">Código de segurança:</label>
+    <input class="form-control"  type="tel" id="security_code" name="security_code" placeholder="Insira o seu código de segurança"  required>
+
+    <label for="security_code">Total a pagar:</label>
+    <input class="form-control"  type="number" id="pagamento" name="pagamento" placeholder="Total a pagar"  readonly>
+    <br>
+  
+  </fieldset> 
+  <button  style="text-align: center" class="btn btn-success btn-block" type="submit">Salvar</button>
+  <br>
+      </div>
+      
+            </form>
+         
+         </div>
+        </div>
+             
+          </article>
+          
+        </div>
+            </section>
+        
+            <footer>
+              <p><a href="sobre.html">Quem somos?</a></p>
+              <div>
+               <p> Todas as imagens pertencem a seus respectivos proprietários <br> | <a href="">Privacidade</a> | <a href=""> Cookies </a> | <a href="">Termos de uso </a>| </p>
+              </div>
+              <p> &copy; Copyright 2023 <br> ASSOCIAÇÃO DOS PROGRAMADORES IPIAL</p>
+                  </footer>
+      </div>
+      
+                 <!-- Janela de Modal -->
+                 <article>
+                  <div class="container">
+                    <div  class="col-md-12">
+              <!------janela---->
+              <form class="modal" id="myModal">
+              <div class="modal-dialog modal-md">
+                <div class="modal-content">
+               <!----cabecalho--->
+                <span class="closemymodal">&times;</span>  
+               <!----corpo--->
+               <div class="modal-body">
+                <fieldset class="fieldset">
+                <div class="from-group">
+              <p class="paragrafo">Tem certeza que deseja sair?</p>  
+              </fieldset>
+              </div>
+              <!----rodape--->
+              <div class="modal-footer">
+                <button type="button"class="btn btn-primary cancel-btn" data-dismiss="modal">
+                     Cancelar
+              </button>
+                 <button type="submit"class="btn btn-danger confirm-btn">
+                    confirmar
+              </button>
+              </div>
+              </div>
+              </div>
+              </div>
+              </form>
+              </div>
+              </div>
+                </article>
+    
+
+  </body>
+  <script>
+    
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";  
+  }
+  
+  document.querySelector(".closemymodal").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+  
+  document.querySelector(".cancel-btn").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+    </script>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AngoViagens suas Viagens lariante">
+	  <meta name="keywords" content="ango,angoviagens,bustick">
+  	<meta name="author" content="Viagens segura">
+    <title> Blog AngoViagens </title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/@media.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+  </head>
+  <body onresize="mudouTamanho()">
+    
+    <div id="interface">
+      
+          <header>
+            <div class="container">
+              <div id="branding">
+                <a href="blog.html">Ango<span class="highlight">Viagens</span></a>
+              </div>
+              <div class="telefone-menu" onclick="clicaMenu()">
+                <span class="sr-only"></span>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+              </div>
+              <nav id="itens">
+                <ul class="nav-lista">
+              <li class="current1"><a href="blog.html">Início</a></li>
+              <li><a href="reservar1.html">Reservar</a></li>
+              <li><a href="registro.html">Registros</a></li>
+              <li><a href="">Informações</a></li>
+              <li><a href="sobre1.html">Sobre</a></li>
+              <li class="borda"><a href="contacto.html"><span class="glyphicon glyphicon-phone-alt"></span>Apoio/Cliente</a></li> 
+            </ul>
+          </nav>
+        </div>
+            </header>
+        
+
+            <section id="newsletter">
+        <div class="container">
+          <h3>Viagens e Reservas</h3>
+          <h4>Site de compras de Bilhetes online</h4>
+          <h5>Blog AngoViagens</h5>   
+          <li class="dropdown">
+            <span class="glyphicon glyphicon-user user"></span>
+            <ul class="dropdown-menu">
+              <li><a href="perfil.html"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
+              <li><a href="configuracoes.html"><span class="glyphicon glyphicon-cog"></span> Configurações</a></li>
+              <li class="borda"><a onclick="openModal()"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
+            </ul>
+          </li>
+        </div>
+       
+            </section>
+<br>
+            <div class="container">
+                <div class="jumbotron">
+<h1 class="title"></h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sint ipsa minus repellat quisquam, maiores consequatur incidunt doloremque. Debitis soluta hic tenetur harum rem praesentium sunt assumenda mollitia suscipit eos?</p>
+                </div>
+            </div>
+            
+            <footer>
+                <p><a href="sobre1.html">Quem somos?</a></p>
+                <div>
+                 <p> Todas as imagens pertencem a seus respectivos proprietários <br> | <a href="">Privacidade</a> | <a href=""> Cookies </a> | <a href="">Termos de uso </a>| </p>
+                </div>
+                <p> &copy; Copyright 2023 <br> ASSOCIAÇÃO DOS PROGRAMADORES IPIAL</p>
+                    </footer>
+                       <!-- Janela de Modal -->
+           <article>
+            <div class="container">
+              <div  class="col-md-12">
+        <!------janela---->
+        <form class="modal" id="myModal">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+         <!----cabecalho--->
+          <span class="closemymodal">&times;</span>  
+         <!----corpo--->
+         <div class="modal-body">
+          <fieldset class="fieldset">
+          <div class="from-group">
+        <p class="paragrafo">Tem certeza que deseja sair?</p>  
+        </fieldset>
+        </div>
+        <!----rodape--->
+        <div class="modal-footer">
+          <button type="button"class="btn btn-primary cancel-btn" data-dismiss="modal">
+               Cancelar
+        </button>
+           <button type="submit"class="btn btn-danger confirm-btn">
+              confirmar
+        </button>
+        </div>
+        </div>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+          </article>
+          
+  </body>
+  <script>
+    
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";  
+  }
+  
+  document.querySelector(".closemymodal").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+  
+  document.querySelector(".cancel-btn").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+    </script>
+</html>

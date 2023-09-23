@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AngoViagens suas Viagens lariante">
+	  <meta name="keywords" content="ango,angoviagens,bustick">
+  	<meta name="author" content="Viagens segura">
+    <title>  Reserva | Huambo Expresso</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+
+    <style>
+
+  /* Header **/
+  header{
+    background:#00006A;
+    color:#ffffff;
+    border-bottom:white 5px solid;
+  }
+
+    header .highlight, header .current a{
+        color: #89271e;
+    font-weight:bold;
+    text-decoration: none;
+  }
+
+  #newsletter{
+    background:#89271e;
+  } 
+  
+  #newsletter h3{
+    color: #00006A;
+      }
+      section#newsletter{
+        margin-bottom: -60px;
+      }
+    
+      form input, form optgroup, form select{
+    color:#00006A;
+    }
+  footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#00006A;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  footer a{
+    color: #ffff;
+
+  }
+  footer a:hover{
+  color:#C42416;
+  text-decoration: none;
+  }
+  .tabela-{
+    color: #00006A;
+    font-weight: bolder;
+  }
+  table{
+    color:#89271e;
+    background: #00006A;
+        border-radius: 20px 20px 0px 0px;
+  }
+  table th{
+    color: white;
+    text-align: center;
+  }
+  li.borda a:hover{
+    background: #89271e;
+    color:#00006A;
+    text-decoration: none;
+  }
+  li.borda a{
+    background-color:#89271e;
+  }
+  
+
+    </style>
+  </head>
+  <body onresize="mudouTamanho()">
+    
+    <div id="interface">
+      
+          <header>
+            <div class="container">
+              <div id="branding">
+                <a href="index.html">Ango<span class="highlight">Viagens</span></a>
+              </div>
+              <div class="telefone-menu" onclick="clicaMenu()">
+                <span class="sr-only"></span>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+              </div>
+              <nav id="itens">
+                <ul class="nav-lista">
+                  <li><a href="index.html">Início</a></li>
+                  <li class="current"><a href="reservar.html">Reservar</a></li>
+                  <li><a href="blog.html" target="_blank">Blog</a></li>
+                  <li><a href="sobre.html">Sobre</a></li>
+                  <li><a style="cursor: pointer;"  onclick="openModal()">Login</a></li>
+                  <li class="borda"><a href="cadastro.html">Conecta-se</a></li>
+                  <li class="borda"><a href="contacto1.html">Apoio/Cliente</a></li>
+                </ul>
+              </nav>
+        </div>
+            </header>
+        
+            <section id="newsletter">
+        <div class="container" >
+          <h3>Viagens e Reservas</h3>
+          <h4>Site de compras de Bibletes Online</h4>
+          <h4>A menor distância entre dois destino</h4>
+            <img src="./img/logohuamboexpresso.jpg" width="49px" style="border-radius: 50%; position: relative; left: 85%; bottom: 72px;"> </div>
+        
+            </section>
+        
+            <section id="main" style="background:url('img/express.jpg');
+            background-size: cover;
+            background-position: center;margin-bottom: -20px;">
+        <div class="container">
+          <article id="main-col">
+            <table borde="0" class="table table-striped table-bordered table-hover table-condensed ">
+                <thead>
+                    <div class="text text-center tabela-">Tabela de viagem da Huambo Expresso</div>
+                    <tr>
+                        <th>Viagem</th>
+                         <th>lorem</th>
+                          <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td>lorem</td>
+                        <td>lorem</td>
+                      <td>R$ 1800,00</td>
+                    </tr>
+                    <tr class="">
+                        <td>lorem</td>
+                       <td>lorem</td>
+                      <td>R$ 4800,00</td>
+                    </tr>
+                    <tr class="">
+        
+                        <td>lorem</td>
+                        <td>lorem</td>
+                      <td>R$ 2800,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <main style="background: #00006A;color: white; border-radius: 20px 20px;">
+                
+                <h1 class="page-title" >Reservar bilhete de Huambo Expresso</h1>
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Atenção:</span>
+                    Por favor preencha os campos consoate a tabela da Huambo Expresso
+                   </div>
+                       <div class="container">
+
+                          <div>
+                <form action="">
+                  <legend style=" color: #ffffff; text-align: left; width: 57%;"><strong>Detalhes</strong></legend>
+                  <div  class="form-group col-md-2">
+                    <P><label for="nomeAuto">Autocarro</label></P>
+                    <input type="text" value="Huambo Expresso" class="form-control" name="nomeAuto" id="nomeAuto" placeholder="Insira o nome do Autocarro" readonly list="Autocarro"/>
+                    <datalist id="Autocarro">
+                        <select name="Autocarro" id="Autocarro">
+                        <optgroup label="Selecione o nome Autocarro">
+                          <option value="Tcul"></option>
+                          <option value="Macon"></option>
+                          <option value="Ango Real"></option>
+                          <option value="Huambo Expresso"></option>
+                          <option value="Torine"></option>
+                    </optgroup>
+                  </select>
+                  </datalist>
+                  <P><label for="localAuto">Sua Localização</label></P>
+                  <input type="text" value="" class="form-control" required name="localAuto" readonly="Insira a tua localidade" id="localAuto" list="localidade">
+                  <datalist id="localidade">
+                    <select name="localidade" id="localidade">
+                    <optgroup label="Selecione o nome Autocarro">
+                 <option value="Luanda"></option>
+                     <option value="Benguela"></option>
+                     <option value="Namibe"></option>
+                     <option value="Huambo"></option>
+                     <option value="Zaire"></option>
+                     <option value="Bengo"></option>
+                     <option value="Moxico"></option>
+                     <option value="Lunda Sul"></option>
+                     <option value="Lunda Norte"></option>
+                     <option value="Cabinda"></option>
+                     <option value="Malanje"></option>
+                     <option value="Cuanza Sul"></option>
+                     <option value="Uige"></option>
+                     <option value="Cuanza Norte"></option>
+                     <option value="Bíe"></option>
+                     <option value="Kuando Kubango"></option>
+                     <option value="Huíla"></option>
+                     <option value="Cunene"></option>
+                </optgroup>
+                
+                </datalist>
+                  </select>
+                </div>
+                
+                
+                  <div class="form-group col-md-3">
+                    <P><label for="destinAuto">Destinação</label></P>
+                    
+                    <input type="text" class="form-control" required name="destinAuto" id="destinAuto" placeholder="Insira o seu destino" list="destino">
+                  <datalist id="destino">
+                    <select name="destino" id="destino">
+                    <optgroup label="Selecione o destino">
+                 <option value="Luanda"></option>
+                     <option value="Benguela"></option>
+                     <option value="Namibe"></option>
+                     <option value="Huambo"></option>
+                     <option value="Zaire"></option>
+                     <option value="Bengo"></option>
+                     <option value="Moxico"></option>
+                     <option value="Lunda Sul"></option>
+                     <option value="Lunda Norte"></option>
+                     <option value="Cabinda"></option>
+                     <option value="Malanje"></option>
+                     <option value="Cuanza Sul"></option>
+                     <option value="Uige"></option>
+                     <option value="Cuanza Norte"></option>
+                     <option value="Bíe"></option>
+                     <option value="Kuando Kubango"></option>
+                     <option value="Huíla"></option>
+                     <option value="Cunene"></option>
+                </optgroup>
+                </select>
+                </datalist>
+                
+                
+                 
+                  <p> <label for="tipoAuto">Tipo de Autocarro</label>   </p>
+                  <select style="padding: 7px; border-radius: 10%; width: 100%;" name="tipoAuto" required id="tipoAuto">
+                 <optgroup label="Detalhes do Autocarro">
+                <option value="Ar acondicionado">AC</option>
+                <option value="Sem Ac">AC/NÃO</option>
+                </optgroup>
+                </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <p><label for="Hora_partida">Hora da Partida</label></p>
+                <input style="padding: 7px; border-radius: 10%; width: 100%;" type="time" required name="Hora_partida" id="Hora_partida">
+                
+                <p> <label for="Hora_chegada">Hora da Chegada</label>
+                  <input style="padding: 7px; border-radius: 10%; width: 100%;" type="text" name="Hora_chegada" id="Hora_chegada"  readonly>
+                  </p>
+                
+                  
+                    </div>
+                
+                      <div class="col-md-7">
+                        <fieldset class="fieldset">
+                          <legend style=" color: #ffffff; text-align: left; width: 100%;"><strong>Pagamento</strong></legend>
+                    <label for="card_number">Número do cartão:</label>
+                    <input class="form-control"  type="text" id="card_number" name="card_number" placeholder="Insira o número do cartão"  required>
+                  
+                    <label for="nome_cartao">Nome do cartão:</label>
+                    <input class="form-control"  type="text" id="nome_cartao" name="nome_cartao" placeholder="Insira o nome do seu cartâo"  required>
+                
+                    <label for="expiry_date">Data de validade:</label>
+                    <input class="form-control" type="date" id="expiry_date" name="expiry_date" placeholder="Insira a data de validade"  required>
+                  
+                    <label for="security_code">Código de segurança:</label>
+                    <input class="form-control"  type="tel" id="security_code" name="security_code" placeholder="Insira o seu código de segurança"  required>
+                
+                    <label for="pagamento">Total a pagar:</label>
+                    <input class="form-control"  type="number" id="pagamento" name="pagamento" placeholder="Total a pagar"  readonly>
+                    <br>
+                  
+                  </fieldset> 
+                  <button  style="text-align: center" class="btn btn-success btn-block" type="submit">Salvar</button>
+                  <br>
+                      </div>
+                </form>
+                         
+                         </div>
+                        </div>
+                
+            </main>
+          </article>
+
+          <div>
+            
+            <aside id="sidebar">
+              <div class="dark"> <span style="font-size: 4vh; color: #256ead; text-align: center;" class="glyphicon glyphicon-user login"></span>
+                <h3 style="font-family: 'FonteLogo';">Login</h3>
+                <form class="quote">
+                        <div>
+                        <br>
+                          <input type="text" name="nome_usuario" id="nome_usuario" placeholder="Insira o seu nome de usúario" required>
+                        </div>
+                        <div>
+                          <br>
+                          <input type="password" name="senha" id="senha" placeholder="Insira a sua senha" required>
+                        </div>
+                        <div>
+                    <br>
+                    <a href="">Esqueceu a sua senha?</a>
+                    <p>Não tens uma conta? <a href="cadastro.html" class="text text-info">Inscreva-se</a></p>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Entrar</button>
+                    </form>
+              </div>
+            </aside>
+          </div>
+        </div>
+            </section>
+        
+            <footer>
+              <p><a href="sobre.html">Quem somos?</a></p>
+              <div>
+               <p> Todas as imagens pertencem a seus respectivos proprietários <br> | <a href="">Privacidade</a> | <a href=""> Cookies </a> | <a href="">Termos de uso </a>| </p>
+              </div>
+              <p> &copy; Copyright 2023 <br> ASSOCIAÇÃO DOS PROGRAMADORES IPIAL</p>
+                  </footer>
+      </div>
+      
+           <!-- Janela de Modal -->
+           <article>
+            <div class="container">
+              <div  class="col-md-12">
+        <!------janela---->
+        <form class="modal" id="myModal">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+         <!----cabecalho--->
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        <h4 class="modal-title">Bem-vindo de volta</h4>
+        </div>
+         <!----corpo--->
+         <div class="modal-body">
+          <fieldset class="fieldset">
+          <div class="from-group">
+              <p><label for="nome_usuario">Nome de Usúario</label>
+              <input value="" class="form-control col-md-3" type="text" placeholder="Insira o seu nome usuario" name="nome_usuario" required id="nome_usuario">
+          </p>
+          <p><label for="senha">Senha</label>
+              <input class="form-control col-md-3"  type="password" maxlength="32"  required name="senha" id="senha" placeholder="Insira a sua senha">
+          </p>    
+        </fieldset>
+        <!----rodape--->
+        <div class="modal-footer">
+          <p><a href="">Esqueceu sua senha?</a></p>
+          <p>Não tem uma conta?<a href="cadastro.html"> Inscreva-se</a></p>
+          <button type="button"class="btn btn-info cancel-btn" data-dismiss="modal">
+               Cancelar
+        </button>
+           <button type="submit"class="btn btn-primary confirm-btn">
+              Entrar
+        </button>
+        </div>
+        </div>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+          </article>
+    
+
+  </body>
+  <script>
+    
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";  
+  }
+  
+  document.querySelector(".close").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+  
+  document.querySelector(".cancel-btn").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+    </script>
+</html>

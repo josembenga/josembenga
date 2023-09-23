@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="AngoViagens suas Viagens lariante">
+	  <meta name="keywords" content="ango,angoviagens,bustick">
+  	<meta name="author" content="Viagens segura">
+    <title> Bem-vindo ao AngoViagens</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+  </head>
+  <body onresize="mudouTamanho()">
+    
+<div id="interface">
+  
+      <header>
+        <div class="container">
+          <div id="branding">
+            <a href="index.html">Ango<span class="highlight">Viagens</span></a>
+          </div>
+          <div class="telefone-menu" onclick="clicaMenu()">
+            <span class="sr-only"></span>
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+          </div>
+          <nav id="itens">
+            <ul class="nav-lista">
+              <li class="current"><a href="index.html">Início</a></li>
+              <li><a href="reservar.html">Reservar</a></li>
+              <li><a href="blog.html" target="_blank">Blog</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a style="cursor: pointer;" onclick="openModal()">Login</a></li>
+              <li class="borda"><a href="cadastro.html">Conecta-se</a></li>
+              <li class="borda"><a href="contacto1.html">Apoio/Cliente</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+ 
+      <section id="showcase">
+        <div class="container">
+          <h1>Bem-vindo ao AngoViagens</h1>
+          <h2>Trazemos para você os melhores autocarro de Angola!</h2>
+          <p>Compre sua passagem de bilhete para uma viajem segura com preços baixos!</p>
+  
+          <div class="container">
+        <ul class="btn-link">
+          <li class="col-xs-6 btn-personalizado"><a class="btn btn-info" href="cadastro.html" role="button" style="font-size: larger;">Começar<span class="glyphicon glyphicon-menu-right"></span></a></li>
+  
+         <li class="col-xs-6 btn-personalizado"><a class="btn btn-primary" href="contacto1.html"target="_blank" role="button" style="font-size: larger;">Contacta-nos<span class="glyphicon glyphicon-menu-right"></span></a></li>
+              </ul>
+  
+          </div>
+        </div>
+      </section>
+  
+      <section id="newsletter">
+        <div class="container">
+          <h2>Confirmar o seu bilhete de passagem</h2>
+          <form>
+            <input style="text-align: center;" type="number" placeholder="Insira o seu PIN" required name="pin">
+            <button type="submit" name="pesquisar-pin" class="btn btn-primary">Pesquisar</button>
+            </form>
+        </div>
+      </section>
+
+      <section id="boxes">
+        <div class="container">
+          <div class="box">
+            <img src="./img/macon.jpg" height="74px" style="border-radius: 50%;">
+            <h3>Macon</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            <button class="btn btn-success"><a href="macon.html" target="_blank">Começar</a></button>
+            <button class="btn btn-info" onclick="maconModal()">Saiba mais</button>
+          </div>
+          <div class="box">
+            <img src="./img/logotcul.jpg" style="border-radius: 50%;">
+            <h3>Tcul</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            <button class="btn btn-success"><a href="tcul.html" target="_blank">Começar</a></button>
+            <button class="btn btn-info" onclick="tculModal()">Saiba mais</button>
+          </div>
+          <div class="box">
+            <img src="./img/logohuamboexpresso.jpg" style="border-radius: 50%;">
+            <h3>Huambo Expresso</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            <button class="btn btn-success"><a href="huamboexpresso.html" target="_blank">Começar</a></button>
+            <button class="btn btn-info" onclick="huamboexpressoModal()">Saiba mais</button>
+          </div>
+          <div class="box">
+            <img src="./img/logoangoreal.png" style="border-radius: 50%;">
+            <h3>Ango-Real</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            <button class="btn btn-success">Começar</button>
+            <button class="btn btn-info" onclick="angorealModal()">Saiba mais</button>
+          </div>
+          <div class="box">
+            <img src="./img/logo_brush.png" height="75px" style="border-radius: 50%;">
+            <h3>Angoaustral-T4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            <button class="btn btn-success">Começar</button>
+            <button class="btn btn-info" onclick="angoaustralModal()">Saiba mais</button>
+          </div>
+          <div class="box">
+            <img src="./img/logorealexpress.png" height="74px" style="border-radius: 50%;">
+            <h3>Real Express</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            <button class="btn btn-success"><a href="realexpress.html" target="_blank">Começar</a></button>
+            <button class="btn btn-info" onclick="realexpressModal()">Saiba mais</button>
+          </div>          
+        </div>
+      </section>
+      <footer>
+        <p><a href="sobre.html">Quem somos?</a></p>
+        <div>
+         <p> Todas as imagens pertencem a seus respectivos proprietários <br> | <a href="">Privacidade</a> | <a href=""> Cookies </a> | <a href="">Termos de uso </a>| </p>
+        </div>
+        <p> &copy; Copyright 2023 <br> ASSOCIAÇÃO DOS PROGRAMADORES IPIAL</p>
+            </footer>
+
+            <!-- Janela de Modal Macon-->
+      <article>
+        <div class="container">
+          <div  class="col-md-12">
+    <!------janela---->
+    <form class="modal" id="maconModal">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+     <!----cabecalho--->
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    <h4 class="modal-title" style="color: #0178B5;">Empresa Macon</h4>
+    </div>
+     <!----corpo--->
+     <div class="modal-body">
+      <fieldset class="fieldset">
+      <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa odit nobis eius distinctio ducimus recusandae exercitationem libero consectetur cum assumenda pariatur earum minus quae dolore, quam officiis eaque magni.</p>
+    </fieldset>
+    <!----rodape--->
+    <div class="modal-footer">
+       <button type="button"class="btn btn-default confirm-btn" style="margin: 0px 225px 0px 0px; color: #0178B5;">
+          OK
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+  </form>
+      </div>
+    </div>
+      </article>
+
+      
+            <!-- Janela de Modal Tcul-->
+            <article>
+              <div class="container">
+                <div  class="col-md-12">
+          <!------janela---->
+          <form class="modal" id="tculModal">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+           <!----cabecalho--->
+          <div class="modal-header">
+            <span class="closetcul">&times;</span>
+          <h4 class="modal-title"style="#C42416;">Empresa Tcul</h4>
+          </div>
+           <!----corpo--->
+           <div class="modal-body">
+            <fieldset class="fieldset">
+            <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa odit nobis eius distinctio ducimus recusandae exercitationem libero consectetur cum assumenda pariatur earum minus quae dolore, quam officiis eaque magni.</p>
+          </fieldset>
+          <!----rodape--->
+          <div class="modal-footer">
+             <button type="button"class="btn btn-default confirm-btna" style="margin: 0px 225px 0px 0px; color:#C42416;">
+                OK
+          </button>
+          </div>
+          </div>
+          </div>
+          </div>
+        </form>
+            </div>
+          </div>
+            </article>
+
+           
+                   <!-- Janela de Modal Huambo Expresso-->
+                   <article>
+                    <div class="container">
+                      <div  class="col-md-12">
+                <!------janela---->
+                <form class="modal" id="huamboexpressoModal">
+                <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                 <!----cabecalho--->
+                <div class="modal-header">
+                  <span class="closehuamboexpresso">&times;</span>
+                <h4 class="modal-title" style="color: #00006A;">Empresa Huambo Expresso</h4>
+                </div>
+                 <!----corpo--->
+                 <div class="modal-body">
+                  <fieldset class="fieldset">
+                  <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa odit nobis eius distinctio ducimus recusandae exercitationem libero consectetur cum assumenda pariatur earum minus quae dolore, quam officiis eaque magni.</p>
+                </fieldset>
+                <!----rodape--->
+                <div class="modal-footer">
+                   <button type="button"class="btn btn-default confirm-btnb" style="margin: 0px 225px 0px 0px; color:#00006A;">
+                      OK
+                </button>
+                </div>
+                </div>
+                </div>
+                </div>
+              </form>
+                  </div>
+                </div>
+                  </article>
+
+                         <!-- Janela de Modal Real Express-->
+            <article>
+              <div class="container">
+                <div  class="col-md-12">
+          <!------janela---->
+          <form class="modal" id="realexpressModal">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+           <!----cabecalho--->
+          <div class="modal-header">
+            <span class="closerealexpress">&times;</span>
+          <h4 class="modal-title" style="color: #00B69D;">Empresa Real Express</h4>
+          </div>
+           <!----corpo--->
+           <div class="modal-body">
+            <fieldset class="fieldset">
+            <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa odit nobis eius distinctio ducimus recusandae exercitationem libero consectetur cum assumenda pariatur earum minus quae dolore, quam officiis eaque magni.</p>
+          </fieldset>
+          <!----rodape--->
+          <div class="modal-footer">
+
+             <button type="button"class="btn btn-default confirm-btnc" style="margin: 0px 225px 0px 0px; color:#00B69D;">
+                OK
+          </button>
+          </div>
+          </div>
+          </div>
+          </div>
+        </form>
+            </div>
+          </div>
+            </article>
+
+                   <!-- Janela de Modal Ango Real-->
+                   <article>
+                    <div class="container">
+                      <div  class="col-md-12">
+                <!------janela---->
+                <form class="modal" id="angorealModal">
+                <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                 <!----cabecalho--->
+                <div class="modal-header">
+                  <span class="closeangoreal">&times;</span>
+                <h4 class="modal-title" style="color: #f39302e8;">Empresa Ango Real</h4>
+                </div>
+                 <!----corpo--->
+                 <div class="modal-body">
+                  <fieldset class="fieldset">
+                  <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa odit nobis eius distinctio ducimus recusandae exercitationem libero consectetur cum assumenda pariatur earum minus quae dolore, quam officiis eaque magni.</p>
+                </fieldset>
+                <!----rodape--->
+                <div class="modal-footer">
+                   <button type="button"class="btn btn-default confirm-btnd" style="margin: 0px 225px 0px 0px; color:#f39302e8;">
+                      OK
+                </button>
+                </div>
+                </div>
+                </div>
+                </div>
+              </form>
+                  </div>
+                </div>
+                  </article>
+
+                         <!-- Janela de Modal Angoaustral-->
+            <article>
+              <div class="container">
+                <div  class="col-md-12">
+          <!------janela---->
+          <form class="modal" id="angoaustralModal">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+           <!----cabecalho--->
+          <div class="modal-header">
+            <span class="closeangoaustral">&times;</span>
+          <h4 class="modal-title" style="color: #c0c008;">Empresa AngoaUstral-T4</h4>
+          </div>
+           <!----corpo--->
+           <div class="modal-body">
+            <fieldset class="fieldset">
+            <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa odit nobis eius distinctio ducimus recusandae exercitationem libero consectetur cum assumenda pariatur earum minus quae dolore, quam officiis eaque magni.</p>
+          </fieldset>
+          <!----rodape--->
+          <div class="modal-footer">
+             <button type="button"class="btn btn-default confirm-btne" style="margin: 0px 225px 0px 0px;color: #c0c008;">
+                OK
+          </button>
+          </div>
+          </div>
+          </div>
+          </div>
+        </form>
+            </div>
+          </div>
+            </article>
+</div>
+
+
+
+
+      <!-- Janela de Modal -->
+      <article>
+        <div class="container">
+          <div  class="col-md-12">
+    <!------janela---->
+    <form class="modal" id="myModal">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+     <!----cabecalho--->
+    <div class="modal-header">
+      <span class="closemymodal">&times;</span>
+    <h4 class="modal-title">Bem-vindo de volta</h4>
+    </div>
+     <!----corpo--->
+     <div class="modal-body">
+      <fieldset class="fieldset">
+      <div class="from-group">
+          <p><label for="nome_usuario">Nome de Usúario</label>
+          <input value="" class="form-control col-md-3" type="text" placeholder="Insira o seu nome usuario" name="nome_usuario" required id="nome_usuario">
+      </p>
+      <p><label for="senha">Senha</label>
+          <input class="form-control col-md-3"  type="password" maxlength="32"  required name="senha" id="senha" placeholder="Insira a sua senha">
+      </p>    
+    </fieldset>
+    <!----rodape--->
+    <div class="modal-footer">
+      <p><a href="">Esqueceu sua senha?</a></p>
+      <p>Não tem uma conta?<a href="cadastro.html"> Inscreva-se</a></p>
+      <button type="button"class="btn btn-info cancel-btn" data-dismiss="modal">
+           Cancelar
+    </button>
+       <button type="submit"class="btn btn-primary confirm-btn">
+          Entrar
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+      </article>
+
+  </body>
+  <script>
+    
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";  
+}
+
+document.querySelector(".closemymodal").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+});
+
+document.querySelector(".cancel-btn").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+});
+document.querySelector(".confirm-btn").addEventListener("click", function() {
+      // Lógica para ação de confirmação
+      document.getElementById("myModal").style.display = "none";
+  });
+</script>
+
+<script>
+  
+  // Script da Macon
+  function maconModal() {
+      document.getElementById("maconModal").style.display = "block";
+  }
+  
+  document.querySelector(".close").addEventListener("click", function() {
+      document.getElementById("maconModal").style.display = "none";
+  });
+  
+  document.querySelector(".confirm-btn").addEventListener("click", function() {
+      // Lógica para ação de confirmação
+      document.getElementById("maconModal").style.display = "none";
+  });
+</script>
+<script>
+  
+  // Script da Angoaustral
+  function angoaustralModal() {
+      document.getElementById("angoaustralModal").style.display = "block";
+  }
+  
+  document.querySelector(".closeangoaustral").addEventListener("click", function() {
+      document.getElementById("angoaustralModal").style.display = "none";
+  });
+  
+  document.querySelector(".confirm-btne").addEventListener("click", function() {
+      // Lógica para ação de confirmação
+      document.getElementById("angoaustralModal").style.display = "none";
+  });
+</script>
+
+<script>
+  
+  // Script da Ango Real
+  function angorealModal() {
+      document.getElementById("angorealModal").style.display = "block";
+  }
+  
+  document.querySelector(".closeangoreal").addEventListener("click", function() {
+      document.getElementById("angorealModal").style.display = "none";
+  });
+  
+  document.querySelector(".confirm-btnd").addEventListener("click", function() {
+      // Lógica para ação de confirmação
+      document.getElementById("angorealModal").style.display = "none";
+  });
+</script>
+
+<script>
+  // Script da Real Express
+  function realexpressModal() {
+      document.getElementById("realexpressModal").style.display = "block";
+  }
+  
+  document.querySelector(".closerealexpress").addEventListener("click", function() {
+      document.getElementById("realexpressModal").style.display = "none";
+  });
+  
+  document.querySelector(".confirm-btnc").addEventListener("click", function() {
+      // Lógica para ação de confirmação
+      document.getElementById("realexpressModal").style.display = "none";
+  });
+</script>
+<script>
+  
+  // Script da Humbo Expresso
+  function huamboexpressoModal() {
+      document.getElementById("huamboexpressoModal").style.display = "block";
+  }
+  
+  document.querySelector(".closehuamboexpresso").addEventListener("click", function() {
+      document.getElementById("huamboexpressoModal").style.display = "none";
+  });
+  
+  document.querySelector(".confirm-btnb").addEventListener("click", function() {
+      // Lógica para ação de confirmação
+      document.getElementById("huamboexpressoModal").style.display = "none";
+  });
+</script>
+
+<script>
+  // Script da Tcul
+  function tculModal() {
+      document.getElementById("tculModal").style.display = "block";
+  }
+  
+  document.querySelector(".closetcul").addEventListener("click", function() {
+      document.getElementById("tculModal").style.display = "none";
+  });
+  
+  document.querySelector(".confirm-btna").addEventListener("click", function() {
+      // Lógica para ação de confirmação
+      document.getElementById("tculModal").style.display = "none";
+  });
+</script>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-br">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AngoViagens suas Viagens lariante">
+	  <meta name="keywords" content="ango,angoviagens,bustick">
+  	<meta name="author" content="Viagens segura">
+    <title> Blog AngoViagens </title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/@media.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+  </head>
+  <body onresize="mudouTamanho()">
+    
+    <div id="interface">
+      
+          <header>
+            <div class="container">
+              <div id="branding">
+                <a href="blog.html">Ango<span class="highlight">Viagens</span></a>
+              </div>
+              <div class="telefone-menu" onclick="clicaMenu()">
+                <span class="sr-only"></span>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+              </div>
+              <nav id="itens">
+                <ul class="nav-lista">
+              <li><a href="blog.html">Início</a></li>
+              <li><a href="reservar1.html">Reservar</a></li>
+              <li><a href="registro.html">Registros</a></li>
+              <li><a href="">Informações</a></li>
+              <li><a href="sobre1.html">Sobre</a></li>
+              <li class="borda"><a href="contacto.html"><span class="glyphicon glyphicon-phone-alt"></span>Apoio/Cliente</a></li>
+                  
+               
+            </ul>
+          </nav>
+        </div>
+            </header>
+        
+
+            <section id="newsletter">
+        <div class="container">
+          <h3>Viagens e Reservas</h3>
+          <h4>Site de compras de Bilhetes online</h4>
+          <h5>Blog AngoViagens</h5>
+          <li class="dropdown">
+            <span class="glyphicon glyphicon-user user"></span>
+            <ul class="dropdown-menu">
+              <li style="color:#e8491d;font-weight: bolder;"><a href="perfil.html"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
+              <li><a href="configuracoes.html"><span class="glyphicon glyphicon-cog"></span> Configurações</a></li>
+              <li class="borda"><a onclick="openModal()"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
+            </ul>
+          </li>  
+      <br>
+        </div>
+        <br>
+            </section>
+            <div class="container caixa-detalhes1">
+               <div class="page-header">
+                <h1>Perfil de @</h1>
+                <p class="lead">Editar minhas informações
+                </p>
+            </div>
+                <ul class="nav nav-tabs caixa-detalhes" role="tablist">
+<li onclick="clicktaba()" class="activo"><a href="#infos" role="tab" data-toggle="tab">Informações pessoais</a></li>
+<li onclick="clicktab()"><a href="#mudarsenha" role="tab" data-toggle="tab">Mudar Senha</a></li>
+<li  onclick="clicktabe()"><a href="#contactos"  role="tab" data-toggle="tab">Contacto</a></li>
+                </ul>
+                 <div class="tab-content conteudo">
+                <!-- Informações do usuario -->
+                    <div class="tab-pane active" role="tabpanel" id="info">
+                        <h3 class="titulocaixa">Minhas Informações</h3>
+                        <div class="col-md-8">
+                            <form class="formulario-caixa" action="">
+                                <div class="from-group">
+<fieldset class="fieldset"><legend><strong>Dados pessoais</strong></legend>
+    <p><label for="primeiro_nome">*Primeiro Nome</label>
+        <input class="form-control col-md-3" type="text" placeholder="Insira o seu primeiro nome" name="primeiro_nome" required id="primeiro_nome">
+    </p>
+    <p><label for="segundo_nome">Segundo Nome</label>
+        <input class="form-control col-md-3" type="text" placeholder="Insira o seu segundo nome" name="segundo_nome"  id="segundo_nome">
+    </p>
+    <p> <label for="nome_usuario">*Nome de Usuário</label>
+    <div class="input-group"><span class="input-group-addon">@</span>
+        <input type="text" class="form-control col-md-3" placeholder="Insira o nome de usuário"  required  name="nome_usuario" id="nome_usuario" aria-describedby="basic-addon2">
+
+       </div>
+    </p> 
+    <p><label for="nascimento">*Nascimento</label>
+        <input class="form-control col-md-3" type="date" placeholder="Insira o seu nascimento"  required  name="nascimento" id="nascimento">
+    </p>
+
+    <p><label for="foto">Foto de Perfil</label>
+    <input type="file" class="form-control col-md-3" name="foto" id="foto"></p>
+    
+         </fieldset>
+         <br>
+         <div  class="from-group">
+            <button type="submit" class="btn btn-default col-md-6">Cancelar</button>
+            <button type="submit" class="btn btn-primary col-md-6">Salvar</button>
+        </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+    <!-- Alterar a senha do usuario -->
+
+                    <div class="tab-pane" role="tabpanel" id="mudarsenha">
+                        <h3 class="titulocaixa">Minha senha</h3>
+                        <div class="col-md-6">
+                            <form class="formulario-caixa" action="">
+                                <div class="from-group">
+                                    <fieldset class="fieldset">
+                                        <legend><strong>Palavra-Passe</strong></legend>
+                                    </fieldset>
+                                    <p><label for="antigasenha">Antiga senha</label>
+                                    <input class="form-control col-md-3" required type="password" name="antigasenha" id="antigasenha" placeholder="Insira a tua antiga senha"></p>
+                                    <p><label for="senha">Nova senha</label>
+                                    <input class="form-control col-md-3" required placeholder="Insira nova senha" type="password" name="senha" id="senha"></p>
+
+                                    <p><label for="confirmar">Confirmar senha</label>
+                                    <input class="form-control col-md-3" required placeholder="Confirma a sua senha" type="password" name="confirmar" id="confirmar"></p>
+                                    <br>
+                                    <a href="esqueceu sua senha?">Esqueceu sua senha?</a>
+                                    <br>
+                                    <br>
+                                    <div class="from-group">
+                                        <button type="submit" class="btn btn-default col-md-6">Cancelar</button>
+                                        <button type="submit" class="btn btn-primary col-md-6">Salvar</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div>
+                       
+                    </div>
+                    <!-- Alterar as informações de contacto -->
+                    <div class="tab-pane" role="tabpanel" id="contacto">
+                        <h3 class="titulocaixa">Minha Localização</h3>
+                   
+                            <form  class="formulario-caixa" action="">
+                                <div class="col-md-6">
+                                <div class="from-group">
+                                    <fieldset class="fieldset">
+                                        <legend><strong>Informações adicionais</strong></legend>
+                                        <p><label for="email">E-mail</label>
+                                            <input class="form-control col-md-3" required type="email" placeholder="Insira o seu e-mail" name="email" id="email">
+                                        </p>
+                                      
+                                        <p><label for="email2">E-mail 2</label>
+                                            <input class="form-control col-md-3" type="email" placeholder="Insira o seu e-mail 2" name="email2" id="email2">
+                                        </p>
+                                        <p><label for="telefone">*Telefone</label>
+                                            <input class="form-control col-md-3" maxlength="13" type="tel"  minlength="13"required name="telefone" id="telefone" placeholder="+244 xxx xxx xxx"> 
+                                        </p>
+                                        <p><label for="telefonefixo">Telefone-Fixo</label>
+                                            <input  maxlength="13" type="tel"  minlength="13" class="form-control col-md-3" name="telefonefixo" id="telefonefixo" placeholder="+244 xxx xxx xxx"> 
+                                        </p>
+                                    </fieldset>
+                                </div>
+                            
+
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <legend><strong>Morada</strong></legend>
+                                    <p><label for="provincia">Província</label>
+                                        <input class="form-control col-md-3" type="text" required name="provincia" id="provincia" placeholder="Insira a sua provincia"> 
+                                    </p>
+                                    <p><label for="cidade">Cidade</label>
+                                        <input class="form-control col-md-3" type="text" name="cidade" id="cidade" placeholder="Insira a sua cidade"> 
+                                    </p>
+                                    <p><label for="municipio">Município</label>
+                                        <input class="form-control col-md-3" maxlength="13" type="text"  minlength="13" name="municipio" id="municipio" placeholder="Insira o seu municipio"> 
+                                    </p>
+                                    <p><label for="bairro">Bairro</label>
+                                        <input class="form-control col-md-3" type="text" name="bairro" id="bairro" placeholder="Insira o seu bairro"> 
+                                    </p>
+                                </fieldset>
+
+                            </div>
+                           
+                            <div class="from-group col-md-12">
+                                <br>
+                             <button type="submit" class="btn btn-default col-md-6">Cancelar</button>
+                                <button type="submit" class="btn btn-primary col-md-6">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+                </div>
+</div>
+            
+            <footer>
+                <p><a href="sobre1.html">Quem somos?</a></p>
+                <div>
+                 <p> Todas as imagens pertencem a seus respectivos proprietários <br> | <a href="">Privacidade</a> | <a href=""> Cookies </a> | <a href="">Termos de uso </a>| </p>
+                </div>
+                <p> &copy; Copyright 2023 <br> ASSOCIAÇÃO DOS PROGRAMADORES IPIAL</p>
+                    </footer>
+                       <!-- Janela de Modal -->
+           <article>
+            <div class="container">
+              <div  class="col-md-12">
+        <!------janela---->
+        <form class="modal" id="myModal">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+         <!----cabecalho--->
+          <span class="closemymodal">&times;</span>  
+         <!----corpo--->
+         <div class="modal-body">
+          <fieldset class="fieldset">
+          <div class="from-group">
+        <p class="paragrafo">Tem certeza que deseja sair?</p>  
+        </fieldset>
+        </div>
+        <!----rodape--->
+        <div class="modal-footer">
+          <button type="button"class="btn btn-primary cancel-btn" data-dismiss="modal">
+               Cancelar
+        </button>
+           <button type="submit"class="btn btn-danger confirm-btn">
+              confirmar
+        </button>
+        </div>
+        </div>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+          </article>
+          
+  </body>
+  <script>
+    
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";  
+  }
+  
+  document.querySelector(".closemymodal").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+  
+  document.querySelector(".cancel-btn").addEventListener("click", function() {
+      document.getElementById("myModal").style.display = "none";
+  });
+    </script>
+</html>
